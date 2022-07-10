@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Kaushan+Script&family=Montserrat:wght@700&family=Poppins:wght@200;300;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto&family=Rock+Salt&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-1: hsl(158, 36%, 37%);
+    --color-2: hsl(30, 38%, 92%);
+    --color-3: hsl(212, 21%, 14%);
+    --color-4: hsl(0, 0%, 100%);
+    --color-5: hsl(228, 12%, 48%);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    background-color: var(--color-2);
+}
+
+
+.principal {
+    max-width: 900px;
+    display: flex;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.863);
+    justify-content: center;
+    background-color: var(--color-4);
+}
+
+ img {
+    border-radius: 20px 0 0 20px;
+    width: 50%;
+}
+
+.content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.content-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.price {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price span#p1 {
+    font-size: 40px;
+    color: var(--color-1);
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+}
+
+.price span#p2 {
+    text-decoration: line-through;
+    color: var(--color-5);
+    font-size: 20px;
+}
+
+.content-1 span#title {
+    font-size: 20px;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--color-5);
+    text-transform: uppercase;
+}
+
+.content-1 h1 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 40px;
+    font-weight: 700x;
+}
+
+.content-1 p {
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--color-5);
+    font-weight: normal;
+    text-align: justify;
+}
+
+.content-1 button {
+    background-color: var(--color-1);
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    color: var(--color-4);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.863);;
+    transition: 0.2s all;
+}
+
+.ri-shopping-cart-line {
+    margin-right: 5px;
+    width: 100px;
+}
+
+.content-1 button:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 850px) {
+    main.principal {
+        flex-direction: column;
+    }
+    
+    .principal img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    html {
+        margin: 20px;  
+    }
+
+    body {
+        height: auto;
+    }
+}
+
